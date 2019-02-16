@@ -1,0 +1,124 @@
+<form class="form-horizontal" action="https://ndosari-ndosari.c9users.io/students" method ="post">
+<fieldset>
+
+<!-- HTML Form (wrapped in a .bootstrap-iso div) -->
+<div class="bootstrap-iso">
+ <div class="container-fluid">
+  <div class="row">
+   <div class="col-md-6 col-sm-6 col-xs-12">
+    <div class="formden_header">
+     <h3>
+      Add New Student
+     </h3>
+     <p>
+     </p>
+     <br>
+    </div>
+    <form method="post">
+     <div class="form-group ">
+      <label class="control-label requiredField" for="firstname">
+       First Name
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+      <div class="input-group">
+       <div class="input-group-addon">
+        <i class="fa fa-user">
+        </i>
+       </div>
+       <input class="form-control" id="firstname" name="firstname" type="text"/>
+      </div>
+     </div>
+     <div class="form-group ">
+      <label class="control-label requiredField" for="lastname">
+       Last Name
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+      <div class="input-group">
+       <div class="input-group-addon">
+        <i class="fa fa-user">
+        </i>
+       </div>
+       <input class="form-control" id="lastname" name="lastname" type="text"/>
+      </div>
+     </div>
+     <div class="form-group ">
+      <label class="control-label requiredField" for="email">
+       Email
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+      <div class="input-group">
+       <div class="input-group-addon">
+        <i class="fa fa-envelope">
+        </i>
+       </div>
+       <input class="form-control" id="email" name="email" type="text"/>
+      </div>
+     </div>
+     <div class="form-group ">
+      <label class="control-label requiredField" for="major">
+       Major
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+      <select class="select form-control" id="major" name="major">
+       <option value="Information Systems">
+        Information Systems
+       </option>
+       <option value="Computer Science">
+        Computer Science
+       </option>
+       <option value="Business Administration">
+        Business Administration
+       </option>
+       <option value="Biological Sciences">
+        Biological Sciences
+       </option>
+       <option value="Computational Biology">
+        Computational Biology
+       </option>
+      </select>
+     </div>
+     <div class="form-group ">
+      <label class="control-label requiredField">
+       Status
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+      <div class="">
+       <div class="radio">
+        <label class="radio">
+         <input name="graduated" type="radio" checked= "checked" value="Graduate"/>
+         Graduate
+        </label>
+       </div>
+       <div class="radio">
+        <label class="radio">
+         <input name="graduated" type="radio" value="Undergraduate"/>
+         Undergraduate
+        </label>
+       </div>
+      </div>
+     </div>
+     <div class="form-group">
+      <div>
+      <br>
+       <button class="btn btn-custom" 
+        style= "background-color:#4379A2; width: 100%; color: white;" name="submit" type="submit">
+        Create New Student
+       </button>
+      </div>
+     </div>
+    </form>
+   </div>
+  </div>
+ </div>
+</div>
+</form>

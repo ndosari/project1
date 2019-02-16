@@ -1,0 +1,33 @@
+<p>
+    <div class="container">
+    <br>
+  <h5><%= @title %></h5>
+  <h7><%= @message %> Click on emails to view students' records.</h7>
+  <br>
+  <br>
+  <table class="table table-hover table-striped table-bordered">
+    <thead class= "thead-dark">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+        <th>Major</th>
+        <th>Edit</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+    <% @all_students.each do |id, firstname, lastname, email, major, graduated| %>
+      <tr>
+        <td><%= firstname %></td>
+        <td><%= lastname %></td>
+        <td><a href="/students/<%= id %>"><%= email %></a></td>
+        <td><%= major%></td>
+        <td><a href="/students/<%= id %>/edit" title= 'Show Student Here'><i style="font-size:20px;" class="fa">&#xf044;</i></a></td>
+        <td><a href = "/students/<%= id %>/delete"><i style="font-size:20px;color:red;" class="fa">&#xf014;</i></a></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+</p>

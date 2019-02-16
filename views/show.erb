@@ -1,0 +1,30 @@
+<p>
+   <br /><h5 style= "text-align:left;">The student you selected is: </h5><br />
+    
+        <table class="table table-hover table-bordered">
+        <tr>
+            <td><i style="font-size:25px;" class="fa">&#xf2bd;</i>&ensp; <%= @student[0][1] %> <%= @student[0][2] %></td>
+        </tr>
+        <tr>
+            <td><i style="font-size:25px;" class="fa">&#xf0e0;</i>&ensp; <%= @student[0][3] %></td>
+        </tr>
+        <tr>
+            <td><i style="font-size:25px;" class="fa">&#xf02d;</i>&ensp; <%= @student[0][4] %></td>
+        </tr>
+        <tr>
+            <td><i style="font-size:25px;" class="fa">&#xf19d;</i>&ensp;<%= @student[0][5] %></td>
+        </tr>
+        </table>
+        <br>
+        <div class= "btn-group" style="width: 100%;">
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        <a href="/students/<%= @student[0][0] %>/edit"><button class="btn btn-custom" 
+        style= "background-color: #4379A2; width: 100%; color: white; ">
+        <i class="fa fa-edit"></i>&ensp;Edit Student's Record
+       </button></a>&ensp;&ensp;
+       <a href="/students/<%= @student[0][0] %>/delete"><button class="btn btn-custom" 
+        style= "background-color:#AB3D25; width: 100%; color: white;">
+        <i class="fa fa-trash"></i>&ensp;Delete Student's Record
+       </button></a>
+       </div>
+</p>

@@ -1,0 +1,126 @@
+<form class="form-horizontal" action="https://ndosari-ndosari.c9users.io/students/<%= @student[0][0] %>" method ="post">
+  <input type="hidden" name="_method" value="patch">
+<fieldset>
+
+<!-- HTML Form (wrapped in a .bootstrap-iso div) -->
+<div class="bootstrap-iso">
+ <div class="container-fluid">
+  <div class="row">
+   <div class="col-md-6 col-sm-6 col-xs-12">
+    <div class="formden_header">
+     <h3>
+      Edit Student's Record
+     </h3>
+     <p>
+     </p>
+     <br>
+    </div>
+    <form method="post">
+     <div class="form-group ">
+      <label class="control-label requiredField" for="firstname">
+       First Name
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+      <div class="input-group">
+       <div class="input-group-addon">
+        <i class="fa fa-user">
+        </i>
+       </div>
+       <input class="form-control" id="firstname" name="firstname"  value= "<%= @student[0][1]%>" type="text"/ >
+      </div>
+     </div>
+     <div class="form-group ">
+      <label class="control-label requiredField" for="lastname">
+       Last Name
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+      <div class="input-group">
+       <div class="input-group-addon">
+        <i class="fa fa-user">
+        </i>
+       </div>
+       <input class="form-control" id="lastname" name="lastname"  value= "<%= @student[0][2]%>" type="text"/>
+      </div>
+     </div>
+     <div class="form-group ">
+      <label class="control-label requiredField" for="email">
+       Email
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+      <div class="input-group">
+       <div class="input-group-addon">
+        <i class="fa fa-envelope">
+        </i>
+       </div>
+       <input class="form-control" id="email" name="email"  value= "<%= @student[0][3]%>" type="text"/>
+      </div>
+     </div>
+     <div class="form-group ">
+      <label class="control-label requiredField" for="major">
+       Major
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+      <select class="select form-control" id="major" name="major">
+       <option value="Information Systems">
+        Information Systems
+       </option>
+       <option value="Computer Science">
+        Computer Science
+       </option>
+       <option value="Business Administration">
+        Business Administration
+       </option>
+       <option value="Biological Sciences">
+        Biological Sciences
+       </option>
+       <option value="Computational Biology">
+        Computational Biology
+       </option>
+      </select>
+     </div>
+     <div class="form-group ">
+      <label class="control-label requiredField">
+       Status
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+      <div class="">
+       <div class="radio">
+        <label class="radio">
+         <input name="graduated" type="radio" checked= "checked" value="Graduate"/>
+         Graduate
+        </label>
+       </div>
+       <div class="radio">
+        <label class="radio">
+         <input name="graduated" type="radio" value="Undergraduate"/>
+         Undergraduate
+        </label>
+       </div>
+      </div>
+     </div>
+     <div class="form-group">
+      <div>
+      <br>
+       <button class="btn btn-custom" 
+        style= "background-color:#4379A2; width: 100%; color: white;"
+        name="submit" type="submit" style= "width: 100%;">
+        Update
+       </button>
+      </div>
+     </div>
+    </form>
+   </div>
+  </div>
+ </div>
+</div>
+</form>
